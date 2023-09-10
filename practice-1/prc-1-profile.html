@@ -1,0 +1,130 @@
+<style>
+    .body-none {
+        display: none;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-o.css' rel='stylesheet'>
+    <link rel="stylesheet" href="prc-1.css">
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .no-net-img {
+        text-align: center;
+        margin-top: 15vh;
+        width: 20%;
+    }
+</style>
+
+<body onload="myFunction()">
+
+
+    <div class="no-net">
+        <center>
+            <img class="no-net-img" src="prc-1-images/no-internet-img.jpg" alt="">
+            <h1>No Internet Connection</h1>
+        </center>
+    </div>
+
+    <div class="body-none">
+
+        <div class="loader-page" id="load-page">
+            <center>
+                <div class="loading"></div>
+            </center>
+        </div>
+
+        <!-- error -->
+
+        <p class="error">
+            <strong class="strong-1">width Error: </strong>your devise is very small
+        </p>
+
+        <!-- error end -->
+
+        <div class="div-1">
+            <div class="div-h-1">
+                <p>
+                <h1 class="h-1">WEBSITE NAME</h1>
+                </p>
+            </div>
+            <div class="div-nav-1">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="header-a" href="prc-1.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-contect-us.html">Contect Us</a>
+                        </li>
+                        <a href="prc-1-profile.html"><img class="profile-logo active-profile"
+                                src="prc-1-images/profile-logo.webp" alt=""></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div-click-nav" id="full-width">
+                <a class="a-nav nav-close" href="#" onclick="cLose()">&times;</a>
+                <a href="prc-1-profile.html"><img class="profile-logo active-profile-m"
+                        src="prc-1-images/profile-logo.webp" alt=""></a>
+                <div class="nav-box" id="nav-box"><br>
+                    <a class="a-nav a-nav-line" href="prc-1.html">Home</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-about.html">About</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-contect-us.html">Contect US</a><br>
+                </div>
+            </div>
+
+            <div class="div-nav-img-1">
+                <img class="img-menu-1" onclick="oPen()" src="prc-1-images/more.png" alt="">
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="container-profile">
+            <div class="profile-head">
+                <a href=""><img class="container-profile-logo" src="prc-1-images/profile-logo.webp" alt=""></a>
+                <div class="profile-h1-p1">
+                    <a href="">
+                        <h1 class="profile-h1">Obaid</h1>
+                    </a>
+                    <a class="profile-p-1" href="#">followers |&nbsp;</a><a class="profile-p-1" href="#">following</a>
+                </div>
+                <a href=""><button class="profile-btn-1">EDIT</button></a>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </center>
+    <script>
+        function oPen() {
+
+            document.getElementById("full-width").style.width = "100%";
+        }
+
+        function cLose() {
+            document.getElementById("full-width").style.width = "0%";
+        }
+
+        var a = document.getElementById("load-page");
+
+        function myFunction() {
+            a.style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<style>
+    .body-none {
+        display: none;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy product</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-o.css' rel='stylesheet'>
+    <link rel="stylesheet" href="prc-1.css">
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .no-net-img {
+        text-align: center;
+        margin-top: 15vh;
+        width: 20%;
+    }
+</style>
+
+<body onload="myFunction()">
+
+    <!-- error -->
+
+    <p class="error">
+        <strong class="strong-1">width Error: </strong>your devise is very small
+    </p>
+
+    <!-- error end -->
+
+    <div class="no-net">
+        <center>
+            <img class="no-net-img" src="prc-1-images/no-internet-img.jpg" alt="">
+            <h1>No Internet Connection</h1>
+        </center>
+    </div>
+
+    <div class="body-none prc-1-body">
+
+        <div class="loader-page" id="load-page">
+            <center>
+                <div class="loading"></div>
+            </center>
+        </div>
+
+        <div class="div-1">
+            <div class="div-h-1">
+                <p>
+                <h1 class="h-1">WEBSITE NAME</h1>
+                </p>
+            </div>
+            <div class="div-nav-1">
+                <nav>
+                    <ul>
+                        <li>
+                            <a class="header-a" href="prc-1.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-contect-us.html">Contect Us</a>
+                        </li>
+                        <a href="prc-1-login.html"><img class="profile-logo" src="prc-1-images/profile-logo.webp"
+                                alt=""></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div-click-nav" id="full-width">
+                <a class="a-nav nav-close" href="#" onclick="cLose()">&times;</a>
+                <a href="prc-1-login.html"><img class="profile-logo" src="prc-1-images/profile-logo.webp" alt=""></a>
+                <div class="nav-box" id="nav-box"><br>
+                    <a class="a-nav a-nav-line" href="prc-1.html">Home</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-about.html">About</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-contect-us.html">Contect US</a><br>
+                </div>
+            </div>
+
+            <div class="div-nav-img-1">
+                <img class="img-menu-1" onclick="oPen()" src="prc-1-images/more.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container buy">
+        <center>
+        <div class="container-user container-1 container-buy">
+            <div class="user-img-buy">
+                <a href="prc-1-cart.html"><img class="buy-img-cart" src="prc-1-images/cart-icon.png" alt=""></a>           
+            <img class="img-cont-1 buy-img-1" src="prc-1-images/iphone-x.jpg" alt="">
+            <h1 class="h1-2 text h1-2-buy-text">IPHONE X</h1>
+        </div>
+    </div>
+            <div class="cont-texti cont-buy"> 
+            <a class="" href="prc-1-buy.html"><button class="cont-btn-1 buy-btn-1">-</button></a>
+            <a class="" href="prc-1-buy.html"><button class="cont-btn-1 buy-btn-2">1</button></a>
+            <a class="" href="prc-1-buy.html"><button class="cont-btn-1 buy-btn-3">+</button></a><br>
+            <a class="" href="prc-1-buy.html"><button class="cont-btn-1 buy-btn-4">Add To Cart</button></a>
+
+            </div>
+        </center>
+        </div><br>
+        <div class="buy-comment">
+        </div>
+    <script>
+        function oPen() {
+
+            document.getElementById("full-width").style.width = "100%";
+        }
+
+        function cLose() {
+            document.getElementById("full-width").style.width = "0%";
+        }
+
+        var a = document.getElementById("load-page");
+
+        function myFunction() {
+            a.style.display = "none";
+        }
+    </script>
+</body>

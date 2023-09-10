@@ -1,0 +1,144 @@
+<style>
+    .body-none {
+        display: none;
+    }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practise</title>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-o.css' rel='stylesheet'>
+    <link rel="stylesheet" href="prc-1.css">
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .no-net-img {
+        text-align: center;
+        margin-top: 15vh;
+        width: 20%;
+    }
+</style>
+
+<body onload="myFunction()">
+
+    <!-- error -->
+
+    <p class="error">
+        <strong class="strong-1">width Error: </strong>your devise is very small
+    </p>
+
+    <!-- error end -->
+
+    <div class="no-net">
+        <center>
+            <img class="no-net-img" src="prc-1-images/no-internet-img.jpg" alt="">
+            <h1>No Internet Connection</h1>
+        </center>
+    </div>
+
+    <div class="body-none prc-1-body">
+
+        <div class="loader-page" id="load-page">
+            <center>
+                <div class="loading"></div>
+            </center>
+        </div>
+
+        <div class="div-1">
+            <div class="div-h-1">
+                <p>
+                <h1 class="h-1">WEBSITE NAME</h1>
+                </p>
+            </div>
+            <div class="div-nav-1">
+                <nav>
+                    <ul>
+                        <li class="active">
+                            <a class="header-a" href="prc-1.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-about.html">About</a>
+                        </li>
+                        <li>
+                            <a class="header-a" href="prc-1-contect-us.html">Contect Us</a>
+                        </li>
+                        <a href="prc-1-login.html"><img class="profile-logo" src="prc-1-images/profile-logo.webp" alt=""></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="div-click-nav" id="full-width">
+                <a class="a-nav nav-close" href="#" onclick="cLose()">&times;</a>
+                <a href="prc-1-login.html"><img class="profile-logo" src="prc-1-images/profile-logo.webp" alt=""></a>
+                <div class="nav-box" id="nav-box"><br>
+                    <a class="a-nav a-nav-line active" href="prc-1.html">Home</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-about.html">About</a><br><br>
+                    <a class="a-nav a-nav-line" href="prc-1-contect-us.html">Contect US</a><br><br>
+                  
+                </div>
+            </div>
+            <div class="div-nav-img-1">
+                <img class="img-menu-1" onclick="oPen()" src="prc-1-images/more.png" alt="">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="container-user container-1">
+                <div class="cont-text">
+                    <a href="prc-1-user.html"><img class="user-logo" src="prc-1-images/user-logo.JPG" alt=""></a>
+                    <p class="p-1 text">Hey There !</p>
+                    <h1 class="h1-2 text">I AM Anas</h1>
+                    <h3 class="h3-1 text">I AM IPHONE SELLER AND BUYER</h3>
+                    <a class="" href="prc-1-buy.html"><button class="cont-btn-1">BUY NOW</button></a>
+                </div>
+                <img class="img-cont-1" src="prc-1-images/iphone-x.jpg" alt="">
+            </div><br>
+
+
+            <div class="container-user container-2">
+                <div class="cont-text cont-text-2">
+                    <a href="#"><img class="user-logo" src="prc-1-images/user-logo-1.webp" alt=""></a>
+                    <p class="p-1 text">Hey There !</p>
+                    <h1 class="h1-2 text">I AM Maham</h1>
+                    <h3 class="h3-1 text">Note These Things Before You Make Your Next Cosmetics Purchase</h3>
+                    <a class="" href="#"><button class="cont-btn-1 btn-2">BUY NOW</button></a>
+                </div>
+                <img class="img-cont-1 img-2" src="prc-1-images/makeup-kit.webp" alt="">
+            </div><br>
+
+            <div class="hide-footer-div">
+            </div>
+            <div class="footer">
+                <div class="footer-text">
+                    <p class="p-3"><a class="footer-a-text" href="mailto:motech508@gmail.com">motech508@gmail.com</a>
+                    </p>
+                    <p class="footer-p-2-text">@Copyright by M Obaid</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function oPen() {
+
+                document.getElementById("full-width").style.width = "100%";
+            }
+
+            function cLose() {
+                document.getElementById("full-width").style.width = "0%";
+            }
+
+            var a = document.getElementById("load-page");
+
+            function myFunction() {
+                a.style.display = "none";
+            }
+        </script>
+
+</body>
+
+</html>
